@@ -1,7 +1,12 @@
 import React from 'react';
+import GlobalStyle from './styles/GlobalStyle';
+import MainInfo from './components/MainInfo';
 
 const App = () => (
-  <p>APP</p>
+  <>
+    <GlobalStyle />
+    <MainInfo />
+  </>
 )
 
 export default App;
