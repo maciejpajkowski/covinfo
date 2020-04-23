@@ -11,7 +11,7 @@ const CountrySelector = () => {
 
     return (
         <>
-            {selectedCountry ? <h2>Displaying data for: </h2> : <h2>Please select a country.</h2>}
+            {selectedCountry ? <h3>Displaying data for: </h3> : <h3>Please select a country.</h3>}
             <select onChange={e => {
                 setSelectedCountry(e.target.value);
                 }}>
