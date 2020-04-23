@@ -3,6 +3,7 @@ import GlobalStyle from './styles/GlobalStyle';
 import Stats from './components/Stats';
 import CountrySelector from './components/CountrySelector';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 const App = () => (
   <>
@@ -10,6 +11,7 @@ const App = () => (
     <Header />
     <Stats url="https://covid19.mathdro.id/api" global/>
     <CountrySelector />
+    <Footer />
   </>
 )
 

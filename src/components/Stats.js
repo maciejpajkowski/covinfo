@@ -4,15 +4,15 @@ import useFetchedData from '../utils/useFetchedData';
 const Stats = ({ url, global }) => {
     const { data, loading, error } = useFetchedData(url);
 
-    if (loading) return <p>Loading...</p>
-    if (error) return <p>Sorry, something went wrong...</p>
+    if (loading) return <div>Loading...</div>
+    if (error) return <div>Sorry, something went wrong...</div>
 
     return (
         <>
             {global && <h2>Global data:</h2>}
-            <p>Confirmed: {data.confirmed.value}</p>
-            <p>Recovered: {data.recovered.value}</p>
-            <p>Died: {data.deaths.value}</p>
+            <div>Confirmed: {data.confirmed.value}</div>
+            <div>Recovered: {data.recovered.value}</div>
+            <div>Died: {data.deaths.value}</div>
         </>
     )
 };
