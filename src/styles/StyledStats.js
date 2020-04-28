@@ -2,10 +2,9 @@ import styled from 'styled-components';
 
 const StyledStats = styled.div`
     h2 {
-        font-family: "Rajdhani";
-        line-height: 1rem;
+        line-height: 1.6rem;
         text-align: center;
-        margin: 1rem 0;
+        margin: 0.8rem 0 0.6rem 0;
     }
 
     div {
@@ -15,6 +14,10 @@ const StyledStats = styled.div`
         justify-content: space-between;
         align-items: center;
         margin: 0 1rem;
+    }
+    
+    p {
+        padding: 0.4rem;
     }
 `;
 

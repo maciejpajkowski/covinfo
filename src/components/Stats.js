@@ -7,8 +7,8 @@ import CountTo from 'react-count-to';
 const Stats = ({ url, global }) => {
     const { data, loading, error } = useFetchedData(url);
 
-    if (loading) return <div>Loading...</div>
-    if (error) return <div>Sorry, something went wrong!</div>
+    if (loading) return <StyledStats><p>Loading...</p></StyledStats>
+    if (error) return <StyledStats><p>Sorry, something went wrong!</p></StyledStats>
 
     const easeOutExpo = (x) => 1 - (1 - x) * (1 - x); //x === 1 ? 1 : 1 - Math.pow(2, -10 * x);
 

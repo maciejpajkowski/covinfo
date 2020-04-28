@@ -14,9 +14,8 @@ const StyledHeader = styled.header`
         font-size: 1.6rem;
         display: inline-block;
         margin: 0;
-        font-family: "Rajdhani";
         font-style: italic;
-        color: #188;
+        color: #9c52f2;
     }
 
     span {
