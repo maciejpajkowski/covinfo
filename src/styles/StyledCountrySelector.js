@@ -22,7 +22,6 @@ const StyledCountrySelector = styled.div`
         text-align: center;
         text-align-last: center;
         font-family: inherit;
-        line-height: 1rem;
 
         option {
             background: #333;

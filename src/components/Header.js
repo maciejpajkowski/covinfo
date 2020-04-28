@@ -11,6 +11,7 @@ const Header = () => {
     if (error) return <p>Error!</p>;
     
     const lastUpdateDate = data ? data.lastUpdate : "Loading...";
+    console.log(lastUpdateDate);
 
     return (
     <StyledHeader>
@@ -18,7 +19,7 @@ const Header = () => {
             <FontAwesomeIcon icon={faVirus} />
             <h1>COVInfo</h1>
         </div>
-        <span><strong>Last update date:</strong><br /> {moment.utc(Date.parse(lastUpdateDate)).format("MMMM Do YYYY, hh:mm:ss")}</span>
+        <span><strong>Last update date:</strong><br /> {moment.utc(Date.parse(lastUpdateDate)).format("MMMM Do YYYY, HH:mm:ss")}</span>
     </StyledHeader>
 )};
 
