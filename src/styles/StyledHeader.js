@@ -10,12 +10,22 @@ const StyledHeader = styled.header`
     box-shadow: 0px 2px 2px 1px #333; 
     padding: 0.6rem;
 
+    div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.6rem;
+        font-style: italic;
+        color: #9c52f2;
+    }
+
     h1 {
         font-size: 1.6rem;
         display: inline-block;
         margin: 0;
-        font-style: italic;
-        color: #9c52f2;
+        margin-left: 4px;
+        color: #af77ef;
     }
 
     span {
