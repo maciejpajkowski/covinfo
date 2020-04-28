@@ -5,7 +5,7 @@ const Stats = ({ url, global }) => {
     const { data, loading, error } = useFetchedData(url);
 
     if (loading) return <div>Loading...</div>
-    if (error) return <div>Sorry, something went wrong...</div>
+    if (error) return <div>Sorry, something went wrong!</div>
 
     return (
         <>

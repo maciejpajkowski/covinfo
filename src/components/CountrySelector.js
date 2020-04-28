@@ -7,7 +7,7 @@ const CountrySelector = () => {
     const [selectedCountry, setSelectedCountry] = useState("");
 
     if (loading) return <p>Loading...</p>
-    if (error) return <p>{error}</p>
+    if (error) return <p>Sorry, something went wrong!</p>
 
     return (
         <>

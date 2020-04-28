@@ -1,6 +1,8 @@
 import styled from 'styled-components';
 
 const StyledFooter = styled.div`
+    font-size: 1rem;
+    line-height: 1.2rem;
     color: #666;
     display: flex;
     flex-direction: row;
