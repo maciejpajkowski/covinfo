@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 const StyledStats = styled.div`
     h2 {
+        font-family: "Rajdhani";
         line-height: 1rem;
         text-align: center;
         margin: 1rem 0;

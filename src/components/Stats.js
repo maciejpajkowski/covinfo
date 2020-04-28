@@ -14,7 +14,7 @@ const Stats = ({ url, global }) => {
 
     return (
         <StyledStats>
-            {global && <h2>Global data:</h2>}
+            {global && <h2>Global data</h2>}
             <div>
                 <span>Confirmed: </span>
                 <StyledConfirmed>
