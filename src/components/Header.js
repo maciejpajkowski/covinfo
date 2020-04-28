@@ -16,7 +16,7 @@ const Header = () => {
     <StyledHeader>
         <div>
             <FontAwesomeIcon icon={faVirus} />
-            <h1> CoV Info</h1>
+            <h1>COVInfo</h1>
         </div>
         <span><strong>Last update date:</strong><br /> {moment.utc(Date.parse(lastUpdateDate)).format("MMMM Do YYYY, hh:mm:ss")}</span>
     </StyledHeader>
