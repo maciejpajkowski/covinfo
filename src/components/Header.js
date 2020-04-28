@@ -11,7 +11,6 @@ const Header = () => {
     if (error) return <p>Error!</p>;
     
     const lastUpdateDate = data ? data.lastUpdate : "Loading...";
-    console.log(lastUpdateDate);
 
     return (
     <StyledHeader>
