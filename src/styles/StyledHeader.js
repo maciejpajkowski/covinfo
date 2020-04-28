@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
         justify-content: space-between;
         font-size: 1.6rem;
         /* font-style: italic; */
-        color: #894bd1;
+        color: #8444ce;
     }
 
     h1 {
@@ -25,7 +25,7 @@ const StyledHeader = styled.header`
         display: inline-block;
         margin: 0;
         margin-left: 4px;
-        color: #9c52f2;
+        color: #9756e2;
     }
 
     span {
