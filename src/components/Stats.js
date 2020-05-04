@@ -16,22 +16,24 @@ const Stats = ({ url, global }) => {
         <StyledStats>
             {global && <h2>Global data</h2>}
             <div>
-                <span>Confirmed: </span>
-                <StyledConfirmed>
-                    <CountTo to={data.confirmed.value} speed={3000} delay={30} easing={easeOutExpo} />
-                </StyledConfirmed>
-            </div>
-            <div>
-                <span>Recovered:</span>
-                <StyledRecovered>
-                    <CountTo to={data.recovered.value} speed={3000} delay={30} easing={easeOutExpo} />
-                </StyledRecovered>
-            </div>
-            <div>
-                <span>Died:</span>
-                <StyledDied>
-                    <CountTo to={data.deaths.value} speed={3000} delay={30} easing={easeOutExpo} />
-                </StyledDied>
+                <div>
+                    <span>Confirmed: </span>
+                    <StyledConfirmed>
+                        <CountTo to={data.confirmed.value} speed={3000} delay={30} easing={easeOutExpo} />
+                    </StyledConfirmed>
+                </div>
+                <div>
+                    <span>Recovered:</span>
+                    <StyledRecovered>
+                        <CountTo to={data.recovered.value} speed={3000} delay={30} easing={easeOutExpo} />
+                    </StyledRecovered>
+                </div>
+                <div>
+                    <span>Died:</span>
+                    <StyledDied>
+                        <CountTo to={data.deaths.value} speed={3000} delay={30} easing={easeOutExpo} />
+                    </StyledDied>
+                </div>
             </div>
         </StyledStats>
     )

@@ -32,6 +32,18 @@ const StyledHeader = styled.header`
         text-align: right;
         font-size: 0.8rem;
     }
+
+    @media (min-width: 768px) {
+        justify-content: space-around;
+        
+        h1 {
+            font-size: 2rem;
+        }
+
+        span {
+            font-size: 1rem;
+        }
+    }
 `
 
 export default StyledHeader;

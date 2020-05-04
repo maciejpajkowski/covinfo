@@ -17,6 +17,7 @@ const StyledCountrySelector = styled.div`
         background:  #333;
         border: 0;
         box-shadow: 0px 2px 5px 0px #222;
+        border-radius: 0.5rem;
         color: inherit;
         padding: 0.2rem;
         text-align: center;
@@ -27,6 +28,36 @@ const StyledCountrySelector = styled.div`
             background: #333;
             color: #eee;
             text-align: center;
+        }
+
+        &:focus {
+            outline: 0;
+        }
+    }
+
+    @media (min-width: 768px) {
+        select {
+            width: 50%;
+            font-size: 24px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        select {
+            width: 35%;
+        }
+    }
+
+    @media (min-width: 1367px) {
+        select {
+            font-size: 28px;
+        }
+    }
+
+    @media (max-width: 320px) {
+        select {
+            width: 95%;
+            font-size: 18px;
         }
     }
 `;
