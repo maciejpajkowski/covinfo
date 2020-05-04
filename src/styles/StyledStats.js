@@ -5,6 +5,8 @@ const StyledStats = styled.div`
         line-height: 1.6rem;
         text-align: center;
         margin: 0.8rem 0 0.6rem 0;
+        animation: mountIn 1.5s forwards;
+        animation-delay: 0s;
     }
 
     div {
@@ -15,6 +17,9 @@ const StyledStats = styled.div`
             justify-content: space-between;
             align-items: center;
             margin: 0 1rem;
+            opacity: 0;
+            animation: mountIn 1.5s forwards;
+            animation-delay: 0.3s;
         }
     }
     
@@ -42,7 +47,7 @@ const StyledStats = styled.div`
                 justify-content: center;
                 align-items: center;
                 box-shadow: 0px 2px 5px 0px #222; 
-                background: #47494d;
+                background: #484a4f;
                 border-radius: 1rem;
                 padding: 1.4rem 1rem;
             }
@@ -55,6 +60,17 @@ const StyledStats = styled.div`
 
     @media (min-width: 1200px) {
         width: 60%;
+    }
+
+    @keyframes mountIn {
+        from {
+            transform: translateY(10px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1;
+        }
     }
 `;
 

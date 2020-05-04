@@ -8,6 +8,9 @@ const StyledCountrySelector = styled.div`
         margin: 1rem 0 0.6rem 0;
         line-height: 1.6rem;
         text-align: center;
+        opacity: 0;
+        animation: mountIn 1.5s forwards;
+        animation-delay: 0.6s;
     }
 
     select {
@@ -23,6 +26,9 @@ const StyledCountrySelector = styled.div`
         text-align: center;
         text-align-last: center;
         font-family: inherit;
+        opacity: 0;
+        animation: mountIn 1.5s forwards;
+        animation-delay: 0.9s;
 
         option {
             background: #333;
@@ -58,6 +64,17 @@ const StyledCountrySelector = styled.div`
         select {
             width: 95%;
             font-size: 18px;
+        }
+    }
+
+    @keyframes mountIn {
+        from {
+            transform: translateY(10px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0px);
+            opacity: 1;
         }
     }
 `;
